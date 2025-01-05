@@ -5,8 +5,9 @@ export DD_LOGS_INJECTION=true
 export DD_AGENT_PORT=8126
 export DD_PROFILING_ENABLED=true
 export NODE_OPTIONS='--require dd-trace/init'
-# npm start
+
+# npm dev
 npx next dev -H 0.0.0.0
 
-# npm build
-#npm start
+# npm prod
+#npx next start -H 0.0.0.0
