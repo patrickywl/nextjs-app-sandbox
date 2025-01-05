@@ -1,0 +1,16 @@
+[[source]]
+name = "Test Python Server"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[packages]
+Flask = "==2.0.1"
+waitress = "==1.4.3"
+Werkzeug = "==2.2.2"
+pipfile = "*"
+ddtrace = "*"
+pyopenssl = "*"
+requests = "*"
+
+[requires]
+python_version = "*"
