@@ -27,7 +27,7 @@ export default async function handler(req, res) {
         delete req.query.proxy
         // Define the URL you want to proxy to
         const queryParams = new URLSearchParams(req.query);
-        const url = `https://0.0.0.0:8080/${proxy !== undefined ? proxy.join('/') : ''}?${queryParams.toString()}`;
+        const url = `http://0.0.0.0:8080/${proxy !== undefined ? proxy.join('/') : ''}?${queryParams.toString()}`;
         let newHeader = { ...headers }
         newHeader['origin'] = newHeader['referer']
         delete newHeader['host']
